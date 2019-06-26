@@ -1,0 +1,16 @@
+.news-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  //background: url('../img/bg-wave.png');
+  .news_style {
+    iframe {
+      height: 400px;
+    }
+
+    @media(min-width: 680px) {
+      iframe {
+        height: 350px;
+      }
+    }
+  }
+}

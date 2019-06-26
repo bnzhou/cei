@@ -1,0 +1,86 @@
+#mainNav {
+  min-height: 2rem;
+  background-color: fade-out($shironeri, .25);
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: transparent;
+    border: 1px solid $sabitetsu;
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar-brand {
+    position: relative;
+    background: url(../img/logo.png);
+    width: 70px;
+    height: 70px;
+    left: 0px;
+    background-size: contain;
+  }
+  .navbar-nav {
+    .nav-item {
+      &:hover {
+        color: $adzuki;
+        outline: none;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  @media (min-width: 900px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 10px;
+    border-bottom-color: $sabitetsu;
+    background-color: fade-out($shironeri, .75);
+    transition: background-color 0.3s ease-in-out;
+    .navbar-brand {
+      padding: 0 0;
+      color: fade-out($sabitetsu, .0);
+    }
+    .nav-link {
+      transition: none;
+      padding: 2rem 1.5rem;
+      color: fade-out($sabitetsu, .05);
+      &:hover {
+        color: $adzuki;
+      }
+      &:active {
+        color: $adzuki;
+      }
+    }
+    &.navbar-shrink {
+      background-color: $sabitetsu;
+      .navbar-brand {
+        position: relative;
+        background: url(../img/logo-small.png);
+        width: 50px;
+        height: 50px;
+        left: 0px;
+        background-size: contain;
+      }
+      .nav-link {
+        color: fade-out($shironeri, .30);
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+        &:hover {
+          color: $shironeri;
+        }
+        &:active {
+          //color: darken($primary, 15%);
+          color: $shironeri;
+        }
+        &.active {
+          //color: $primary;
+          color: $shironeri;
+          outline: none;
+          border-bottom: 0.25rem solid $sabitetsu;
+        }
+      }
+    }
+  }
+}

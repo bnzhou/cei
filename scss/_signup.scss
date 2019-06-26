@@ -1,0 +1,56 @@
+.signup-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: url('../img/bg-wave.png') no-repeat scroll center;
+  background-size: cover;
+  .form-inline {
+    input {
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;
+      padding: 1.25rem 1rem;
+      height: auto;
+      font-family: 'Lato', sans-serif;
+      font-size: 80%;
+      text-transform: uppercase;
+      //letter-spacing: 0.15rem;
+      border: 0;
+    }
+  }
+  .card {
+    border: 0;
+    border-bottom: 0.25rem solid $sabitetsu;
+    h4 {
+      font-size: 0.8rem;
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+    hr {
+      border-color: $sabitetsu;
+      border-width: 0.25rem;
+      width: 5rem;
+    }
+  }
+  //.card-2 {
+  //  border: 0;
+  //  border-bottom: 0.25rem solid mediumseagreen;
+  //  background-color: white;
+  //  h4 {
+  //    font-size: 0.8rem;
+  //    font-family: 'Lato', sans-serif;
+  //    text-transform: uppercase;
+  //    letter-spacing: 0.15rem;
+  //  }
+  //  hr {
+  //    border-color: mediumseagreen;
+  //    border-width: 0.25rem;
+  //    width: 5rem;
+  //  }
+  //}
+}
+
+.signup-section-special {
+  background: url('../img/bg-cei.jpg') no-repeat scroll center;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}

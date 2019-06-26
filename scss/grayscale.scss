@@ -1,0 +1,93 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'masthead.scss';
+@import 'buttons.scss';
+@import 'about.scss';
+@import 'projects.scss';
+@import 'signup.scss';
+@import 'contact.scss';
+@import 'timeline.scss';
+@import 'videoheader.scss';
+@import 'services.scss';
+@import 'footer.scss';
+@import 'news.scss';
+
+body {
+  font-family: 'Lato', sans-serif;
+
+  background: linear-gradient(rgba(72,88,89,0.55)), url('../img/bg-about.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  //letter-spacing: 0.0625em;
+}
+
+a {
+  color: $adzuki;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: darken($adzuki, 20%);
+  }
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-primary {
+  background-color: $sabitetsu !important;
+}
+
+.bg-light {
+  background-color: fade-out($shironeri, .85) !important;
+}
+
+.bg-shiro {
+  background-color: $shironeri !important;
+}
+
+.bg-dairan {
+  background-color: $tairan !important;
+}
+
+.bg-adzuki {
+  background-color: $adzuki !important;
+}
+
+.bg-gray-100 {
+  background-color: $gray-100 !important;
+}
+
+.text-light {
+  color: $shironeri !important;
+}
+
+.text-sabi {
+  color: $sabitetsu !important;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.bg-light-blue {
+  background-color: lighten(#e3f2fd, 4%) !important;
+}
+
+.bg-red {
+  background-color: $secondary !important;
+}
+
+.text-primary {
+  color: $sabitetsu !important;
+}
+
+.text-shiro {
+  color: $shironeri !important;
+}
+
+.featured-text {
+  font-family: 'Lato', sans-serif;
+}
