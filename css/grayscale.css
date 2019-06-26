@@ -6,7 +6,7 @@
 
 #mainNav {
   min-height: 2rem;
-  background-color: rgba(252, 250, 242, 0.75);
+  background-color: #FCFAF2;
 }
 
 #mainNav .navbar-toggler {
@@ -1057,6 +1057,10 @@ a:focus, a:hover {
 
 .bg-primary {
   background-color: #485859 !important;
+}
+
+.bg-primary-light {
+  background-color: rgba(252, 250, 242, 0.15) !important;
 }
 
 .bg-light {

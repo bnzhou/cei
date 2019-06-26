@@ -40,6 +40,10 @@ a {
   background-color: $sabitetsu !important;
 }
 
+.bg-primary-light {
+  background-color: fade-out($shironeri, .85) !important;
+}
+
 .bg-light {
   background-color: fade-out($shironeri, .85) !important;
 }
