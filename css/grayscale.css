@@ -357,8 +357,14 @@
 
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
+}
+
+@media (min-width: 992px) {
+  .section-heading .section-heading-lower {
+    font-size: 3rem;
+  }
 }
 
 .intro {
@@ -465,7 +471,6 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -630,6 +635,7 @@
 
 .signup-section-special {
   background: url("../img/bg-cei.jpg") no-repeat scroll center;
+  opacity: 0.90;
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -889,7 +895,7 @@
 
 .videoheader {
   position: relative;
-  height: 75vh;
+  height: 45vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -940,7 +946,7 @@
 
 @media (min-width: 768px) {
   .videoheader {
-    height: 75vh;
+    height: 45vh;
   }
   .videoheader h1 {
     font-size: 3rem;
@@ -1033,6 +1039,57 @@ footer .footer_link a:active {
   }
 }
 
+.participant-section .container-fluid {
+  max-width: 1920px;
+}
+
+.participant-section .container-fluid .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+.participant-section .container-fluid .portfolio-box .portfolio-box-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(21, 101, 192, 0.9);
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+.participant-section .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.participant-section .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+.participant-section .container-fluid .portfolio-box:hover .portfolio-box-caption {
+  opacity: 0.8;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 88, 89, 0.55))), url("../img/bg-about.jpg");
@@ -1049,6 +1106,16 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #4e2724;
+}
+
+.btn {
+  margin-bottom: 4px;
+}
+
+.bg-kyoto {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))), url("/img/kyoto.jpg") no-repeat scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("/img/kyoto.jpg") no-repeat scroll;
+  background-size: cover;
 }
 
 .bg-black {

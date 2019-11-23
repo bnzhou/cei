@@ -132,7 +132,10 @@
   }
   .section-heading-lower {
     display: block;
-    font-size: 3rem;
+    @media (min-width: 992px) {
+      font-size: 3rem;
+    }
+    font-size: 2rem;
     font-weight: 100;
   }
 }

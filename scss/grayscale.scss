@@ -32,6 +32,20 @@ a {
   }
 }
 
+.btn {
+  margin-bottom: 4px;
+}
+
+.bg-kyoto {
+  background:
+          /* top, transparent black, faked with gradient */
+          linear-gradient(
+                          rgba(0, 0, 0, 0.3),
+                          rgba(0, 0, 0, 0.0)
+          ), url("/img/kyoto.jpg") no-repeat scroll;
+  background-size: cover;
+}
+
 .bg-black {
   background-color: $black !important;
 }
