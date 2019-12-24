@@ -1,35 +1,31 @@
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: $sabitetsu;
+.footer-section {
+  font-size: 80%;
+  color: $black;
 
-  .list-inline {
-    margin: 0;
-    padding: 0;
+  .footer-info-row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $gray-200;
   }
+
+  .footer-copyright-row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $gray-300;
+  }
+
   .copyright {
-    padding-top: 1.5rem;
-    color: fade-out($shironeri, .75);
-    font-size: 14px;
-    margin-bottom: 0;
-    text-align: center;
+    color: $gray-600;
   }
+
   .footer_link {
-    padding-top: 0.5rem;
-    color: fade-out($shironeri, .75);
     a {
-      color: fade-out($shironeri, .75);
-      &:hover {
-        color: $shironeri;
-      }
-      &:focus {
-        color: $shironeri;
-      }
+      &:hover
+      &:focus
       &:active {
-        color: $shironeri !important;
+        color: $adzuki;
       }
     }
-    font-size: 14px;
-    text-align: center;
   }
 }
+
