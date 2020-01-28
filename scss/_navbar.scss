@@ -1,8 +1,16 @@
 #mainNav {
+  padding-left: 15px;
+  padding-right: 15px;
   min-height: 2rem;
-  font-weight: 800;
   font-size: 110%;
-  background-color: transparent;
+  background-color: $white;
+
+  display: flex;
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
 
   .navbar-toggler {
     border-color: $black;
@@ -18,22 +26,30 @@
     background: url(../img/logo.png);
     width: 70px;
     height: 70px;
-    left: 0;
     background-size: contain;
   }
   .nav-link {
-    transition: none;
-    padding: 2rem 1.5rem;
+    font-weight: 800;
+    padding: 1rem 0rem;
+    background: none;
+    border: none;
     color: $black;
+    font-size: 150%;
+    cursor: pointer;
     &:hover,
     &:active {
       color: $adzuki;
     }
   }
   @media (min-width: 900px) {
-    padding-top: 0;
-    padding-bottom: 0;
+    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
+
+    .nav-link {
+      padding: 1rem 1.5rem;
+      font-size: 120%;
+    }
+
     &.navbar-shrink {
       border-bottom: 1px solid $gray-300;
       background-color: $white;
@@ -43,9 +59,10 @@
         width: 50px;
         height: 50px;
         background-size: contain;
-      }
-      .nav-link {
-        padding: 1.5rem 1.5rem 1.25rem;
+        .nav-link {
+          font-size: 110%;
+          padding: 1rem 0rem;
+        }
       }
     }
   }
@@ -53,6 +70,6 @@
 
 .nav-header {
   padding-top: 3rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 2.5rem;
 }
 

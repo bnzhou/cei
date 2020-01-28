@@ -9,7 +9,7 @@
 @import 'contact.scss';
 @import 'timeline.scss';
 @import 'videoheader.scss';
-@import 'services.scss';
+@import 'others.scss';
 @import 'footer.scss';
 @import 'news.scss';
 @import 'video.scss';
@@ -18,7 +18,7 @@
 body {
   font-family: 'Lato', sans-serif;
 
-  background: linear-gradient(rgba(72,88,89,0.55)), url('../img/bg-about.jpg');
+  //background: linear-gradient(rgba(72,88,89,0.55)), url('../img/bg-about.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -42,6 +42,19 @@ a {
 
 .btn {
   margin-bottom: 4px;
+}
+
+.bg-wave {
+  background: url('../img/bg-wave.png') no-repeat scroll center;
+}
+
+.bg-gray-pattern {
+  background: url('../img/bg-gray.png') scroll center;
+}
+
+.bg-activity {
+  background: url('../img/bg-cei.jpg') scroll center;
+  background-size: cover;
 }
 
 .bg-kyoto {
@@ -94,6 +107,9 @@ a {
   color: $sabitetsu !important;
 }
 
+.text-black {
+  color: $black !important;
+}
 .bg-dark {
   background-color: #212529 !important;
 }
@@ -116,4 +132,8 @@ a {
 
 .featured-text {
   font-family: 'Lato', sans-serif;
+}
+
+.bg-semi-transparent {
+  background-color: fade-out($shironeri, .85) !important;
 }

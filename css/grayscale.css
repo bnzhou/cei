@@ -1,14 +1,28 @@
 /*!
  * Start Bootstrap - Grayscale v5.0.2 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+@charset "UTF-8";
 #mainNav {
+  padding-left: 15px;
+  padding-right: 15px;
   min-height: 2rem;
-  font-weight: 800;
   font-size: 110%;
-  background-color: transparent;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mainNav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #mainNav .navbar-toggler {
@@ -28,15 +42,17 @@
   background: url(../img/logo.png);
   width: 70px;
   height: 70px;
-  left: 0;
   background-size: contain;
 }
 
 #mainNav .nav-link {
-  -webkit-transition: none;
-  transition: none;
-  padding: 2rem 1.5rem;
+  font-weight: 800;
+  padding: 1rem 0rem;
+  background: none;
+  border: none;
   color: #161616;
+  font-size: 150%;
+  cursor: pointer;
 }
 
 #mainNav .nav-link:hover, #mainNav .nav-link:active {
@@ -45,10 +61,13 @@
 
 @media (min-width: 900px) {
   #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
+    background-color: transparent;
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .nav-link {
+    padding: 1rem 1.5rem;
+    font-size: 120%;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid #dee2e6;
@@ -61,14 +80,15 @@
     height: 50px;
     background-size: contain;
   }
-  #mainNav.navbar-shrink .nav-link {
-    padding: 1.5rem 1.5rem 1.25rem;
+  #mainNav.navbar-shrink .navbar-brand .nav-link {
+    font-size: 110%;
+    padding: 1rem 0rem;
   }
 }
 
 .nav-header {
   padding-top: 3rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .masthead {
@@ -318,7 +338,7 @@
     left: 0;
     width: 55%;
     font-size: 90%;
-    margin-top: 3rem;
+    margin-top: 5rem;
     position: absolute;
   }
   .intro .intro-text .intro-button {
@@ -385,6 +405,7 @@
   color: black;
   font-size: 1.5rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .projects-section .card-text {
@@ -393,6 +414,16 @@
 
 .projects-section .featured-text {
   padding: 2rem;
+}
+
+.projects-section .text-primary {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projects-section .img-darker {
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
 }
 
 .projects-section .project-text {
@@ -551,6 +582,35 @@
   color: #FCFAF2;
 }
 
+.project-page-title {
+  background: #fff;
+}
+
+.project-page-title .intro-img {
+  width: 100%;
+  float: right;
+  height: auto;
+}
+
+.project-page-title .section-heading-upper {
+  font-weight: 800;
+}
+
+@media (min-width: 992px) {
+  .project-page-title {
+    height: 600px;
+  }
+  .project-page-title .intro-img {
+    width: 70%;
+    float: right;
+    height: auto;
+  }
+}
+
+.project-page-content .content-point:before {
+  content: "• ";
+}
+
 .signup-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -666,8 +726,13 @@
 
 .timeline-section {
   padding-top: 2rem;
-  background-color: rgba(252, 250, 242, 0.85);
   padding-bottom: 2rem;
+}
+
+.timeline-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .timeline {
@@ -935,6 +1000,11 @@
   }
 }
 
+.mino-city-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .service-icon {
   background-color: #FCFAF2;
   color: #485859;
@@ -1113,8 +1183,6 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 88, 89, 0.55))), url("../img/bg-about.jpg");
-  background: linear-gradient(rgba(72, 88, 89, 0.55)), url("../img/bg-about.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1137,6 +1205,19 @@ a:focus, a:hover {
 
 .btn {
   margin-bottom: 4px;
+}
+
+.bg-wave {
+  background: url("../img/bg-wave.png") no-repeat scroll center;
+}
+
+.bg-gray-pattern {
+  background: url("../img/bg-gray.png") scroll center;
+}
+
+.bg-activity {
+  background: url("../img/bg-cei.jpg") scroll center;
+  background-size: cover;
 }
 
 .bg-kyoto {
@@ -1185,6 +1266,10 @@ a:focus, a:hover {
   color: #485859 !important;
 }
 
+.text-black {
+  color: #161616 !important;
+}
+
 .bg-dark {
   background-color: #212529 !important;
 }
@@ -1207,4 +1292,8 @@ a:focus, a:hover {
 
 .featured-text {
   font-family: 'Lato', sans-serif;
+}
+
+.bg-semi-transparent {
+  background-color: rgba(252, 250, 242, 0.15) !important;
 }

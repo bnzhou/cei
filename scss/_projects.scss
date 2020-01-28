@@ -13,6 +13,7 @@
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
+    text-transform: uppercase;
   }
 
   .card-text {
@@ -21,6 +22,13 @@
 
   .featured-text {
     padding: 2rem;
+  }
+  .text-primary {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .img-darker {
+    filter: brightness(60%);
   }
   .project-text {
     padding: 2rem;
@@ -169,6 +177,41 @@
   .featured-text {
     //padding: 2rem;
     color: $shironeri;
+  }
+}
+
+.project-page-title {
+  background: $white;
+  //height: 800px;
+  //display: flex;
+  //flex-direction: column;
+  //padding: 15px;
+
+  .intro-img{
+    width:100%;
+    float:right;
+    height: auto;
+    //max-height:600px;
+  }
+
+  .section-heading-upper {
+    font-weight: 800;
+  }
+
+  @media (min-width: 992px) {
+    height: 600px;
+    .intro-img{
+      width:70%;
+      float:right;
+      height: auto;
+      //max-height:600px;
+    }
+  }
+}
+
+.project-page-content {
+  .content-point:before {
+    content:"• ";
   }
 }
 
