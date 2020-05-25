@@ -1,0 +1,24 @@
+.impact-section {
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+
+  background: $white;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
+
+  .container {
+    padding: 2rem;
+    height: 40vh;
+    background: url('../img/bg-cei.jpg') no-repeat scroll center;
+    background-size: cover;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    //font-weight: bold;
+    line-height: 3rem;
+    color: white;
+  }
+}

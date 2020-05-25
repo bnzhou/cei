@@ -9,17 +9,25 @@
 @import 'contact.scss';
 @import 'timeline.scss';
 @import 'videoheader.scss';
-@import 'services.scss';
+@import 'others.scss';
 @import 'footer.scss';
 @import 'news.scss';
+@import 'video.scss';
+@import 'impact.scss';
 
 body {
   font-family: 'Lato', sans-serif;
 
-  background: linear-gradient(rgba(72,88,89,0.55)), url('../img/bg-about.jpg');
+  //background: linear-gradient(rgba(72,88,89,0.55)), url('../img/bg-about.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 66%;
+    }
+  }
   //letter-spacing: 0.0625em;
 }
 
@@ -32,12 +40,47 @@ a {
   }
 }
 
+.btn {
+  margin-bottom: 4px;
+}
+
+.bg-wave {
+  background: url('../img/bg-wave.png') no-repeat scroll center;
+}
+
+.bg-gray-pattern {
+  background: url('../img/bg-gray.png') scroll center;
+}
+
+.bg-blue-pattern {
+  background: url('../img/bg-blue.png') scroll left;
+}
+
+.bg-activity {
+  background: url('../img/bg-cei.jpg') scroll center;
+  background-size: cover;
+}
+
+.bg-kyoto {
+  background:
+          /* top, transparent black, faked with gradient */
+          linear-gradient(
+                          rgba(0, 0, 0, 0.3),
+                          rgba(0, 0, 0, 0.0)
+          ), url("/img/kyoto.jpg") no-repeat scroll;
+  background-size: cover;
+}
+
 .bg-black {
   background-color: $black !important;
 }
 
 .bg-primary {
   background-color: $sabitetsu !important;
+}
+
+.bg-primary-light {
+  background-color: fade-out($shironeri, .85) !important;
 }
 
 .bg-light {
@@ -68,6 +111,9 @@ a {
   color: $sabitetsu !important;
 }
 
+.text-black {
+  color: $black !important;
+}
 .bg-dark {
   background-color: #212529 !important;
 }
@@ -90,4 +136,8 @@ a {
 
 .featured-text {
   font-family: 'Lato', sans-serif;
+}
+
+.bg-semi-transparent {
+  background-color: fade-out($shironeri, .85) !important;
 }

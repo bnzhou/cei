@@ -1,8 +1,13 @@
 // Styling for the timeline section
 .timeline-section {
   padding-top: 2rem;
-  background-color: fade-out($shironeri, 0.15);
   padding-bottom: 2rem;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
 
 .timeline {

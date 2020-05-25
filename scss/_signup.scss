@@ -49,8 +49,18 @@
 }
 
 .signup-section-special {
-  background: url('../img/bg-cei.jpg') no-repeat scroll center;
-  background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  height: 140vh;
+
+  .container {
+    background: url('../img/bg-cei.jpg') no-repeat scroll center;
+    background-size: cover;
+  }
+
+  .my-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+  }
 }

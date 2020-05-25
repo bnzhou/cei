@@ -1,12 +1,9 @@
 .videoheader {
   position: relative;
-  //background: linear-gradient(to top, #{fade-out($shironeri, .99)} 80%,#{fade-out($shironeri, .5)} 90%,$shironeri 100%),
-  //url('../img/photo-japan.jpeg');
-  height: 75vh;
-  min-height: 25rem;
+  height: 40vh;
+  min-height: 40rem;
   width: 100%;
   overflow: hidden;
-  font-family: 'Lato', sans-serif;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -38,8 +35,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: $sabitetsu;
-    opacity: 0.4;
+    background-color: $gray-100;
+    //background: rgb(255,255,255);
+    //background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
+    opacity: 0.7;
     z-index: 1;
   }
 
@@ -51,23 +50,28 @@
     }
   }
   @media(min-width: 768px) {
-    height: 75vh;
     h1 {
-      font-size: 3rem;
-      line-height: 3rem;
+      font-size: 4.5rem;
+      font-weight: 800;
+      line-height: 5rem;
+      color: $black;
     }
     h2 {
       font-size: 2rem;
+      color: $black;
     }
   }
   @media(max-width: 767px) {
-    height: 45vh;
+    color: $black;
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
+      font-weight: bold;
       line-height: 3rem;
+      color: $black;
     }
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
+      color: $black;
     }
   }
 }

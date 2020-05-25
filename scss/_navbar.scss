@@ -1,86 +1,75 @@
 #mainNav {
+  padding-left: 15px;
+  padding-right: 15px;
   min-height: 2rem;
-  background-color: fade-out($shironeri, .25);
+  font-size: 110%;
+  background-color: $white;
+
+  display: flex;
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
   .navbar-toggler {
-    font-size: 80%;
-    padding: 0.75rem;
-    color: transparent;
-    border: 1px solid $sabitetsu;
+    border-color: $black;
     &:focus {
       outline: none;
     }
   }
+  .navbar-toggler-icon {
+    color: $black;
+  }
   .navbar-brand {
     position: relative;
-    background: url(../img/logo.png);
+    background: url(../img/logo-n-l.png);
     width: 70px;
     height: 70px;
-    left: 0px;
     background-size: contain;
   }
-  .navbar-nav {
-    .nav-item {
-      &:hover {
-        color: $adzuki;
-        outline: none;
-      }
-      &:active,
-      &:focus {
-        outline: none;
-        background-color: transparent;
-      }
+  .nav-link {
+    font-weight: 800;
+    padding: 1rem 0rem;
+    background: none;
+    border: none;
+    color: $black;
+    font-size: 150%;
+    cursor: pointer;
+    &:hover,
+    &:active {
+      color: $adzuki;
     }
   }
   @media (min-width: 900px) {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: 10px;
-    border-bottom-color: $sabitetsu;
-    background-color: fade-out($shironeri, .75);
+    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
-    .navbar-brand {
-      padding: 0 0;
-      color: fade-out($sabitetsu, .0);
-    }
+
     .nav-link {
-      transition: none;
-      padding: 2rem 1.5rem;
-      color: fade-out($sabitetsu, .05);
-      &:hover {
-        color: $adzuki;
-      }
-      &:active {
-        color: $adzuki;
-      }
+      padding: 1rem 1.5rem;
+      font-size: 120%;
     }
+
     &.navbar-shrink {
-      background-color: $sabitetsu;
+      border-bottom: 1px solid $gray-300;
+      background-color: $white;
       .navbar-brand {
         position: relative;
-        background: url(../img/logo-small.png);
+        background: url(../img/logo-n-s.png);
         width: 50px;
         height: 50px;
-        left: 0px;
         background-size: contain;
-      }
-      .nav-link {
-        color: fade-out($shironeri, .30);
-        padding: 1.5rem 1.5rem 1.25rem;
-        border-bottom: 0.25rem solid transparent;
-        &:hover {
-          color: $shironeri;
-        }
-        &:active {
-          //color: darken($primary, 15%);
-          color: $shironeri;
-        }
-        &.active {
-          //color: $primary;
-          color: $shironeri;
-          outline: none;
-          border-bottom: 0.25rem solid $sabitetsu;
+        .nav-link {
+          font-size: 110%;
+          padding: 1rem 0rem;
         }
       }
     }
   }
 }
+
+.nav-header {
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+}
+

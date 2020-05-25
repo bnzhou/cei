@@ -1,0 +1,49 @@
+.video-section {
+  //padding: 5rem 0;
+  background-color: $white;
+
+  .carousel-control-prev, .carousel-control-next {
+    color: $white;
+  }
+
+  .carousel-inner {
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    height: 80vh;
+    min-height: 400px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background: {
+      linear-gradient: (
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      )
+    };
+  }
+
+  .section-heading-upper {
+    display: block;
+    font-size: 3rem;
+    //font-weight: bold;
+    line-height: 5rem;
+    color: $white;
+    text-transform: uppercase;
+    text-shadow: 0.5px $gray-300;
+  }
+  .section-heading-lower {
+    display: block;
+    font-size: 1.2rem;
+    color: $white;
+    text-shadow: 0.5px $gray-300;
+  }
+}
