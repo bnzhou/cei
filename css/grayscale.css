@@ -39,7 +39,7 @@
 
 #mainNav .navbar-brand {
   position: relative;
-  background: url(../img/logo.png);
+  background: url(../img/logo-n-l.png);
   width: 70px;
   height: 70px;
   background-size: contain;
@@ -75,7 +75,7 @@
   }
   #mainNav.navbar-shrink .navbar-brand {
     position: relative;
-    background: url(../img/logo-small.png);
+    background: url(../img/logo-n-s.png);
     width: 50px;
     height: 50px;
     background-size: contain;
@@ -1213,6 +1213,10 @@ a:focus, a:hover {
 
 .bg-gray-pattern {
   background: url("../img/bg-gray.png") scroll center;
+}
+
+.bg-blue-pattern {
+  background: url("../img/bg-blue.png") scroll left;
 }
 
 .bg-activity {
