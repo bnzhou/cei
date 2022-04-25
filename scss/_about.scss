@@ -47,8 +47,8 @@
 }
 
 .about-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   background: $white;
   background-attachment: fixed;
@@ -98,7 +98,6 @@
   border-bottom: 0.3rem solid black;
 }
 
-
 .intro {
   position: relative;
   @media (min-width: 992px) {
@@ -110,6 +109,65 @@
     .intro-text {
       left: 0;
       width: 55%;
+      font-size: 90%;
+      margin-top: 5rem;
+      position: absolute;
+      .intro-button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -1rem;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .intro-text {
+      width: 45%;
+    }
+  }
+}
+
+.intro-ft {
+  position: relative;
+  @media (min-width: 992px) {
+    .intro-img {
+      width: 57%;
+      float: right;
+      height: 400px;
+      object-fit: cover;
+    }
+    .intro-text {
+      left: 0;
+      width: 45%;
+      font-size: 90%;
+      margin-top: 5rem;
+      position: absolute;
+      .intro-button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -1rem;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .intro-text {
+      width: 45%;
+    }
+  }
+}
+.intro-ft-right {
+  position: relative;
+  @media (min-width: 992px) {
+    .intro-img {
+      width: 57%;
+      float: left;
+      height: 400px;
+      object-fit: cover;
+    }
+    .intro-text {
+      right: 0;
+      width: 45%;
       font-size: 90%;
       margin-top: 5rem;
       position: absolute;
@@ -158,6 +216,20 @@
 
 .thumb {
   cursor: pointer;
+}
+
+.about-secion-title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.list-item {
+  padding-top: 10px;
+}
+
+.about-section-cei-logo {
+  height: 65px;
+  width: auto;
 }
 
 

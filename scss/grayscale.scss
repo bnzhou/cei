@@ -17,7 +17,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-
+  font-weight: normal;
   //background: linear-gradient(rgba(72,88,89,0.55)), url('../img/bg-about.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -32,20 +32,89 @@ body {
 }
 
 a {
-  color: $adzuki;
+  border-radius: 0 !important;
+  color: $secondary;
   &:focus,
   &:hover {
     text-decoration: none;
-    color: darken($adzuki, 20%);
+    color: darken($secondary, 20%);
   }
 }
 
 .btn {
+  border-radius: 0 !important;
   margin-bottom: 4px;
+  //border: 0.1px solid !important;
+}
+
+.btn-secondary {
+  color: $shironeri !important;
+  background-color: $primary !important;
+  border: 0.1px solid $primary !important;
+  &:focus,
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: fade-out($primary, .15) !important;
+    border: 0.1px solid $primary !important;
+  }
+}
+
+.btn-outline-sec {
+  color: $adzuki !important;
+  background-color: transparent !important;
+  border: 0.1px solid $adzuki !important;
+  &:focus,
+  &:hover {
+    color: $secondary !important;
+    text-decoration: none;
+    background-color: $adzuki !important;
+    border: 0.1px solid $adzuki !important;
+  }
+}
+
+.btn-primary-gold {
+  color: $secondary !important;
+  background-color: $adzuki !important;
+  border: 0.1px solid $adzuki !important;
+  &:focus,
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $adzuki !important;
+    border: 0.1px solid $adzuki !important;
+  }
+}
+
+.btn-outline {
+  color: $secondary !important;
+  background-color: transparent !important;
+  border: 0.1px solid $secondary !important;
+  &:focus,
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $adzuki !important;
+    border: 0.1px solid $adzuki !important;
+  }
+}
+
+.btn-primary-out {
+  color: $primary !important;
+  background-color: transparent !important;
+  border: 0.1px solid $primary !important;
+  &:focus,
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $primary !important;
+    border: 0.1px solid $primary !important;
+  }
 }
 
 .bg-wave {
-  background: url('../img/bg-wave.png') no-repeat scroll center;
+  background: url('../img/bg-wave.png') scroll center;
+  background-size: cover;
 }
 
 .bg-gray-pattern {
@@ -60,6 +129,30 @@ a {
   background: url('../img/bg-cei.jpg') scroll center;
   background-size: cover;
 }
+
+.bg-sea {
+  background: url('../img/bg-sea.png') scroll center;
+  background-size: cover;
+}
+
+.bg-gold-strip {
+  background: url('../img/gold-strip.jpg') scroll top;
+  background-size: cover;
+}
+
+.bg-history {
+  background: url('../img/22/bg-history.png') no-repeat scroll top;
+  background-size: contain;
+  background-color: $black;
+  background-position: right;
+}
+
+.bg-history-light {
+  background: url('../img/22/bg-history-light.png') no-repeat scroll top;
+  background-size: contain;
+  background-position: right;
+}
+
 
 .bg-kyoto {
   background:
@@ -77,6 +170,22 @@ a {
 
 .bg-primary {
   background-color: $sabitetsu !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-primary-40 {
+  background-color: fade-out($primary, .45)  !important;
+}
+
+.bg-secondary-light {
+  background-color: fade-out($secondary, .85) !important;
+}
+
+.bg-light-white {
+  background-color: #fffffa;
 }
 
 .bg-primary-light {
@@ -103,12 +212,20 @@ a {
   background-color: $gray-100 !important;
 }
 
+.bg-gray-200 {
+  background-color: $gray-200 !important;
+}
+
 .text-light {
   color: $shironeri !important;
 }
 
 .text-sabi {
   color: $sabitetsu !important;
+}
+
+.text-sec {
+  color: $adzuki !important;
 }
 
 .text-black {
@@ -131,13 +248,53 @@ a {
 }
 
 .text-shiro {
+  //font-weight: lighter !important;
   color: $shironeri !important;
 }
 
+.font-size-1rem {
+  font-size: 1rem !important;
+}
+
 .featured-text {
+  font-weight: lighter !important;
   font-family: 'Lato', sans-serif;
 }
 
 .bg-semi-transparent {
   background-color: fade-out($shironeri, .85) !important;
+}
+
+.h-80 {
+  height: 80px;
+}
+
+.h-80percent {
+  height: 80vh;
+}
+
+.h-120 {
+  height: 120px;
+}
+
+.h-150 {
+  height: 150px;
+}
+
+.h-300 {
+  height: 300px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+@media (min-width : 320px) and (max-width : 1000px) {
+  .h-highlight-card {
+    height: 150px;
+  }
+}
+
+.h-highlight-card {
+  height: 230px;
 }

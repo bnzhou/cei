@@ -13,18 +13,22 @@ $gray-900: #212529 !default;
 $black: #161616 !default;
 
 //$primary: #64a19d !default;
-$primary: #1565c0 !default;
-$secondary: #b71c1c !default;
+$primary: #2b3037 !default;
+$secondary: #37322B !default;
 
 $shironeri: #FCFAF2 !default;
-$sabitetsu: #485859 !default;
-$adzuki: #944944 !default;
-$tairan: #37485A !default;
+$sabitetsu: #2b3037 !default;
+//$sabitetsu: #485859 !default;
+//$adzuki: #944944 !default;
+//$tairan: #37485A !default;
+$tairan: #2b3037 !default;
+$adzuki: #7F7363 !default;
+
 
 // Font overrides
-$font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$font-family-sans-serif: 'Lato', sans-serif !default;
 
-$font-family-serif: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$font-family-serif: 'Lato', sans-serif !default;
 
 $font-family-base: $font-family-serif !default;
 

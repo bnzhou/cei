@@ -15,7 +15,7 @@
   }
 
   .carousel-item {
-    height: 80vh;
+    height: 70vh;
     min-height: 400px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -31,18 +31,40 @@
     };
   }
 
+  @media (min-width: 992px) {
+    .carousel-item {
+      height: 80vh !important;;
+      min-height: 400px !important;
+    }
+    .section-heading-upper {
+      display: block;
+      font-size: 3rem !important;
+      line-height: 5rem !important;
+      color: $white;
+      text-transform: uppercase;
+      text-shadow: 0.5px $gray-300;
+
+    }
+    .section-heading-lower {
+      display: block;
+      font-size: 1.2rem;
+      color: $white;
+      text-shadow: 0.5px $gray-300;
+    }
+  }
+
   .section-heading-upper {
     display: block;
-    font-size: 3rem;
-    //font-weight: bold;
-    line-height: 5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: $white;
     text-transform: uppercase;
     text-shadow: 0.5px $gray-300;
+
   }
   .section-heading-lower {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: $white;
     text-shadow: 0.5px $gray-300;
   }

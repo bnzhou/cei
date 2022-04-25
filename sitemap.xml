@@ -4,34 +4,59 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://www.ceinitiative.org/</loc>
-  <lastmod>2019-04-13T05:36:04+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.ceinitiative.org/programs/minoboston.html</loc>
-  <lastmod>2019-04-13T05:42:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ceinitiative.org/apply.html</loc>
-  <lastmod>2019-04-13T05:36:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ceinitiative.org/privacy.html</loc>
-  <lastmod>2019-04-13T05:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.ceinitiative.org/terms.html</loc>
-  <lastmod>2019-04-13T05:36:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.ceinitiative.org/copyright.html</loc>
-  <lastmod>2019-04-13T05:36:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <url>
+    <loc>https://www.ceinitiative.org/</loc>
+    <lastmod>2020-11-25T22:09:58+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/programs/minoboston.html</loc>
+    <lastmod>2020-07-29T20:01:26+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/programs/conversation.html</loc>
+    <lastmod>2020-07-29T20:01:27+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/programs/summerschool.html</loc>
+    <lastmod>2020-07-29T20:01:26+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/programs/japanese-class.html</loc>
+    <lastmod>2020-07-29T20:01:27+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/programs/english-class.html</loc>
+    <lastmod>2020-07-29T20:01:27+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/about.html</loc>
+    <lastmod>2020-11-25T22:09:58+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/event/re.html</loc>
+    <lastmod>2020-11-25T22:09:58+00:00</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/privacy.html</loc>
+    <lastmod>2019-08-11T00:42:59+00:00</lastmod>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/terms.html</loc>
+    <lastmod>2019-08-11T00:42:59+00:00</lastmod>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://www.ceinitiative.org/copyright.html</loc>
+    <lastmod>2019-08-11T00:42:59+00:00</lastmod>
+    <priority>0.40</priority>
+  </url>
 </urlset>

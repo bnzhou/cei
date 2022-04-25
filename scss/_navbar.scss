@@ -14,8 +14,12 @@
 
   .navbar-toggler {
     border-color: $black;
+    border-radius: 0;
+    border-width: 0;
+
     &:focus {
-      outline: none;
+      outline: $black;
+      border-width: 1px;
     }
   }
   .navbar-toggler-icon {
@@ -23,18 +27,18 @@
   }
   .navbar-brand {
     position: relative;
-    background: url(../img/logo-n-l.png);
-    width: 70px;
-    height: 70px;
+    background: url(../img/22/logo.png);
+    width: 150px;
+    height: 55px;
     background-size: contain;
   }
   .nav-link {
-    font-weight: 800;
-    padding: 1rem 0rem;
+    font-weight: 600;
+    padding: 0.5rem 0rem;
     background: none;
     border: none;
-    color: $black;
-    font-size: 150%;
+    color: $primary;
+    font-size: 130%;
     cursor: pointer;
     &:hover,
     &:active {
@@ -42,7 +46,7 @@
     }
   }
   @media (min-width: 900px) {
-    background-color: transparent;
+    background-color: $white;
     transition: background-color 0.3s ease-in-out;
 
     .nav-link {
@@ -55,12 +59,12 @@
       background-color: $white;
       .navbar-brand {
         position: relative;
-        background: url(../img/logo-n-s.png);
-        width: 50px;
+        background: url(../img/22/logo-s.png);
+        width: 60px;
         height: 50px;
         background-size: contain;
         .nav-link {
-          font-size: 110%;
+          font-size: 0.7rem;
           padding: 1rem 0rem;
         }
       }

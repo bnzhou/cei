@@ -9,8 +9,26 @@
     text-transform: uppercase;
   }
 
+  .card {
+    border-radius: 0 !important;
+  }
+
+  .card-img-top-sm {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 !important;
+  }
+
+  .card-img-top {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 !important;
+  }
+
   .card-title{
-    color: black;
+    color: $adzuki;
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -30,6 +48,9 @@
   .img-darker {
     filter: brightness(60%);
   }
+  .cei-spark{
+    max-width: 300px;
+  }
   .project-text {
     padding: 2rem;
     font-size: 90%;
@@ -47,7 +68,7 @@
     position: relative;
     overflow: hidden;
     max-width: 530px;
-    margin: auto auto 1rem;
+    margin: auto auto 0.5rem;
     .caption {
       display: flex;
       height: 100%;
@@ -58,15 +79,15 @@
       bottom: 0;
       z-index: 1;
       .caption-content {
-        color: $shironeri;
+        color: $gray-200;
         margin: auto 2rem; //2rem;
         h2 {
-          font-size: 1.5rem;
-          text-transform: uppercase;
+          font-size: 1.2rem;
+          text-transform: capitalize;
         }
         p {
           font-weight: 300;
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
     }
@@ -78,26 +99,33 @@
         -webkit-clip-path: inset(0px);
         clip-path: inset(0px);
         .caption-content {
+          color: $gray-500;
           transition: opacity 0.25s;
-          margin-left: 5rem;
-          margin-right: 5rem;
-          margin-bottom: 5rem;
+          margin-left: 3rem;
+          margin-right: 3rem;
+          margin-bottom: 3rem;
         }
       }
       img {
         -webkit-transition: -webkit-clip-path 0.25s ease-out;
         -webkit-clip-path: inset(-1px);
         clip-path: inset(-1px);
+        filter: brightness(35%);
       }
       &:hover {
         img {
-          -webkit-clip-path: inset(2rem);
-          clip-path: inset(2rem);
+          -webkit-clip-path: inset(0.5rem);
+          clip-path: inset(0.5rem);
+          background-color: transparent;
+          filter: brightness(70%);
         }
         .caption {
-          background-color: fade-out($sabitetsu, 0.1);
-          -webkit-clip-path: inset(2rem);
-          clip-path: inset(2rem);
+          .caption-content {
+            color: $gray-200;
+          }
+          background-color: transparent;
+          -webkit-clip-path: inset(1rem);
+          clip-path: inset(1rem);
         }
       }
     }
@@ -210,6 +238,7 @@
 }
 
 .project-page-content {
+  font-size: 100%;
   .content-point:before {
     content:"• ";
   }
